@@ -1,0 +1,17 @@
+#rotation
+import cv2
+
+img = cv2.imread('lena.jpg')
+
+rotate90 = cv2.rotate(img, cv2.ROTATE_90_COUNTERCLOCKWISE)
+rotate180 = cv2.rotate(img, cv2.ROTATE_180)
+rotate270 = cv2.rotate(img, cv2.ROTATE_90_CLOCKWISE)
+
+
+cv2.imshow('Original Image', img)
+cv2.imshow('Rotated90 Image', rotate90)
+cv2.imshow('Rotated180 Image', rotate180)
+cv2.imshow('Rotated270 Image', rotate270)
+
+
+cv2.waitKey()
